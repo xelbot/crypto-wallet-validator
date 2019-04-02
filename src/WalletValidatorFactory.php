@@ -3,7 +3,6 @@
 namespace Xelbot\Crypto;
 
 use Xelbot\Crypto\Exceptions\CurrencyNotFoundException;
-use Xelbot\Crypto\Validators;
 
 class WalletValidatorFactory
 {
@@ -28,6 +27,6 @@ class WalletValidatorFactory
             throw new CurrencyNotFoundException(sprintf('Currency "%s" not found.', $currency));
         }
 
-        return new $class;
+        return new $class();
     }
 }

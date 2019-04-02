@@ -23,6 +23,9 @@
         "php": ">=7.1.0",
         "kornrunner/keccak": "~1.0"
     },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.8"
+    },
     "autoload": {
         "psr-4": {
             "Xelbot\\Crypto\\": "src/"

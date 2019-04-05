@@ -22,7 +22,8 @@ class WalletValidatorFactory
      */
     public static function create(string $currency): Validators\AddressValidatorInterface
     {
-        $class = isset(self::$currencies[$currency]) ? self::$currencies[$currency] : null;
+        $currencyKey = strtoupper($currency);
+        $class = isset(self::$currencies[$currencyKey]) ? self::$currencies[$currencyKey] : null;
         if (!$class) {
             throw new CurrencyNotFoundException(sprintf('Currency "%s" not found.', $currency));
         }

@@ -2,6 +2,8 @@
 
 Library for validation of Ethereum, Bitcoin and other cryptocoin wallets
 
+[![Build Status](https://travis-ci.com/xelbot/crypto-wallet-validator.svg?branch=master)](https://travis-ci.com/xelbot/crypto-wallet-validator)
+
 ## Installation
 
 Use composer to install the package:

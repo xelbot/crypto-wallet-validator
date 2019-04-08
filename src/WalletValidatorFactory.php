@@ -11,6 +11,10 @@ class WalletValidatorFactory
      */
     protected static $currencies = [
         'ETH' => Validators\EthereumValidator::class,
+        'BKX' => Validators\EthereumValidator::class,
+        'CLO' => Validators\EthereumValidator::class,
+        'ETC' => Validators\EthereumValidator::class,
+        'ETZ' => Validators\EthereumValidator::class,
     ];
 
     /**

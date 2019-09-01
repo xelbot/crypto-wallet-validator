@@ -15,6 +15,7 @@ class WalletValidatorFactory
         'CLO' => Validators\EthereumValidator::class,
         'ETC' => Validators\EthereumValidator::class,
         'ETZ' => Validators\EthereumValidator::class,
+        'ZIL' => Validators\ZilliqaValidator::class,
     ];
 
     /**
